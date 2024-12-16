@@ -18,7 +18,7 @@ export function Navbar() {
           aria-label="Accueil"
         >
           <Sparkles className="h-6 w-6" aria-hidden="true" />
-          <span className="font-bold">Guide d'Animations</span>
+          <span className="font-bold">Guide d&apos;Animations</span>
         </Link>
         <nav className="ml-auto flex gap-4" aria-label="Navigation principale">
           <Link href="/" className="text-sm font-medium hover:text-primary">

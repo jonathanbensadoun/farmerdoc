@@ -25,7 +25,32 @@ export default function Home() {
           </Link>
         </div>
       </section>
-
+      <section className="container py-12 space-y-8">
+        <h2 className="text-3xl font-bold text-center">installation</h2>
+        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+          <div className="flex flex-col gap-2">
+            <h3 className="text-xl font-bold">1. Créer un projet Next.js</h3>
+            <p>Créez un nouveau projet Next.js en utilisant .</p>
+            <code className="p-1 bg-gray-200 rounded text-center">
+              npx create-next-app@latest
+            </code>
+          </div>
+          <div className="flex flex-col gap-2">
+            <h3 className="text-xl font-bold">2. Installer Tailwind CSS</h3>
+            <p>Installez Tailwind CSS en utilisant .</p>
+            <code className="p-1  bg-gray-200 rounded text-center">
+              npm install tailwindcss
+            </code>
+          </div>
+          <div className="flex flex-col gap-2">
+            <h3 className="text-xl font-bold">3. Installer Framer Motion</h3>
+            <p>Installez Framer Motion en utilisant .</p>
+            <code className="p-1  bg-gray-200 rounded text-center">
+              npm install motion
+            </code>
+          </div>
+        </div>
+      </section>
       <section className="container py-12 space-y-8">
         <h2 className="text-3xl font-bold text-center">
           Exemples d&apos;Animations
