@@ -1,6 +1,12 @@
 "use client";
 
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
 import { CodeBlock } from "@/components/ui/code-block";
 import { motion } from "framer-motion";
 
@@ -11,9 +17,14 @@ interface AnimationCardProps {
   component: React.ReactNode;
 }
 
-export function AnimationCard({ title, description, code, component }: AnimationCardProps) {
+export function AnimationCard({
+  title,
+  description,
+  code,
+  component,
+}: AnimationCardProps) {
   return (
-    <Card className="w-full">
+    <Card className="w-screen md:w-full">
       <CardHeader>
         <CardTitle className="text-2xl">{title}</CardTitle>
         <CardDescription>{description}</CardDescription>

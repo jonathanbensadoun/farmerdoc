@@ -288,4 +288,81 @@ const examples = [
       </motion.div>
     ),
   },
+  {
+    title: "trois éléments apparaissent en décalage",
+    description:
+      "Une animation de décalage qui fait apparaître les éléments un par un. en boucle.",
+    code: `<div className="grid gap-6 grid-cols-3">
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{
+            duration: 0.5,
+            delay: 0.5,
+          }}
+          className="p-6 bg-primary text-primary-foreground rounded-lg"
+        >
+          Élément 1
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{
+            duration: 0.5,
+            delay: 1,
+          }}
+          className="p-6 bg-primary text-primary-foreground rounded-lg"
+        >
+          Élément 2
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{
+            duration: 0.5,
+            delay: 1.5,
+          }}
+          className="p-6 bg-primary text-primary-foreground rounded-lg"
+        >
+          Élément 3
+        </motion.div>
+      </div>`,
+    component: (
+      <div className="grid gap-6 grid-cols-3">
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{
+            duration: 0.5,
+            delay: 0.5,
+          }}
+          className="p-6 bg-primary text-primary-foreground rounded-lg"
+        >
+          Élément 1
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{
+            duration: 0.5,
+            delay: 1,
+          }}
+          className="p-6 bg-primary text-primary-foreground rounded-lg"
+        >
+          Élément 2
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{
+            duration: 0.5,
+            delay: 1.5,
+          }}
+          className="p-6 bg-primary text-primary-foreground rounded-lg"
+        >
+          Élément 3
+        </motion.div>
+      </div>
+    ),
+  },
 ];
